@@ -1,0 +1,4 @@
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY target/server-proxy-1.0-SNAPSHOT.jar offshoreproxy.jar
+CMD ["java", "-jar", "offshoreproxy.jar"]

@@ -1,0 +1,4 @@
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY target/client-proxy-1.0-SNAPSHOT.jar shipproxy.jar
+CMD ["java", "-jar", "shipproxy.jar"]
